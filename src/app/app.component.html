@@ -1,4 +1,6 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div id="main" [ngClass]="mainClasses" >
+  <div *ngIf = "view" [ngClass]="containterArquetipoEjemploClass">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<siigo-loading></siigo-loading>

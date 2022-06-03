@@ -1,0 +1,24 @@
+trigger:
+  branches:
+    include:
+    - dev
+    - master
+
+pr:
+  branches:
+    include:
+    - dev
+    - master
+
+
+resources:
+  repositories:
+    - repository: Pipelines
+      type: git
+      name: "Siigo/Siigo.Pipeline"
+
+extends:
+  template: microfrontend/mf-pipeline.yaml@Pipelines
+  parameters:
+    project: Angular
+    projectName: ArquetipoEjemplo

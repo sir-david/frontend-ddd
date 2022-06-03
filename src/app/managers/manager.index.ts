@@ -1,0 +1,1 @@
+export { TestManager } from './test-manager/test-manager.manager';
